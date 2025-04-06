@@ -38,7 +38,7 @@ func TestYAMLParsing(t *testing.T) {
 	require.NotNil(t, rules[1].And)
 	assert.Equal(t, 2, len(rules[1].And))
 	require.NotNil(t, rules[1].And[0].NegativePattern)
-	assert.Equal(t, "np", rules[1].And[0].NegativePattern)
+	assert.Equal(t, StringArray{"np"}, rules[1].And[0].NegativePattern)
 
 	rules = heuristics.Disambiguations[3].Rules
 	assert.Equal(t, 1, len(rules))
