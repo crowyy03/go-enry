@@ -79,8 +79,8 @@ func loadRule(namedPatterns map[string]StringArray, rule *Rule) *LanguagePattern
 		// e.g. by emiting `rule.Rule(...)` instead of
 		// an (ugly) `rule.Or( rule.MatchingLanguages(""), ... )`
 		result = &LanguagePattern{"Or", rule.Languages, pattern, nil, isRE2(pattern)}
-	} else if rule.NegativePattern != "" { // NotPattern
-		pattern := rule.NegativePattern
+	} else if len(rule.NegativePattern) != 0 { // NotPattern
+		pattern := strings.Join(rule.NegativePattern, orPipe) // Combine multiple patterns
 		result = &LanguagePattern{"Not", rule.Languages, pattern, nil, isRE2(pattern)}
 	} else if rule.NamedPattern != "" { // Named OrPattern
 		pattern := strings.Join(namedPatterns[rule.NamedPattern], orPipe)
@@ -125,7 +125,7 @@ type Rule struct {
 type Patterns struct {
 	Pattern         StringArray `yaml:"pattern,omitempty"`
 	NamedPattern    string      `yaml:"named_pattern,omitempty"`
-	NegativePattern string      `yaml:"negative_pattern,omitempty"`
+	NegativePattern StringArray `yaml:"negative_pattern,omitempty"`
 }
 
 // StringArray is workaround for parsing named_pattern,
