@@ -1,11 +1,14 @@
+//go:build ((darwin && cgo) || (linux && cgo)) && amd64
 // +build darwin,cgo linux,cgo
 // +build amd64
 
 package main
 
 import "C"
-import "github.com/go-enry/go-enry/v2"
-import "github.com/go-enry/go-enry/v2/data"
+import (
+	"github.com/crowyy03/go-enry/v2"
+	"github.com/crowyy03/go-enry/v2/data"
+)
 
 //export GetLanguage
 func GetLanguage(filename string, content []byte) string {

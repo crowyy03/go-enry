@@ -5,7 +5,7 @@ import (
 	"log"
 	"path/filepath"
 
-	"github.com/go-enry/go-enry/v2/internal/code-generator/generator"
+	"github.com/crowyy03/go-enry/v2/internal/code-generator/generator"
 )
 
 var (
