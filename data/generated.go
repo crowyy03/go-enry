@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/go-enry/go-enry/v2/regex"
+	"github.com/crowyy03/go-enry/v2/regex"
 )
 
 // GeneratedCodeExtensions contains all extensions that belong to generated

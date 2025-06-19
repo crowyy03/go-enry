@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/go-enry/go-enry/v2/data"
-	"github.com/go-enry/go-enry/v2/regex"
+	"github.com/crowyy03/go-enry/v2/data"
+	"github.com/crowyy03/go-enry/v2/regex"
 )
 
 const binSniffLen = 8000

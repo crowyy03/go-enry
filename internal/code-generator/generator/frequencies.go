@@ -14,7 +14,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/go-enry/go-enry/v2/internal/tokenizer"
+	"github.com/crowyy03/go-enry/v2/internal/tokenizer"
 )
 
 type samplesFrequencies struct {

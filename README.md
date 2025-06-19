@@ -1,4 +1,4 @@
-# go-enry [![GoDoc](https://godoc.org/github.com/go-enry/go-enry?status.svg)](https://pkg.go.dev/github.com/go-enry/go-enry/v2) [![Test](https://github.com/go-enry/go-enry/actions/workflows/goTest.yml/badge.svg)](https://github.com/go-enry/go-enry/actions/workflows/goTest.yml?query=branch%3Amaster)
+# go-enry [![GoDoc](https://godoc.org/github.com/go-enry/go-enry?status.svg)](https://pkg.go.dev/github.com/crowyy03/go-enry/v2) [![Test](https://github.com/go-enry/go-enry/actions/workflows/goTest.yml/badge.svg)](https://github.com/go-enry/go-enry/actions/workflows/goTest.yml?query=branch%3Amaster)
 
 Programming language detector and toolbox to ignore binary or vendored files. _enry_, started as a port to _Go_ of the original [Linguist](https://github.com/github/linguist) _Ruby_ library, that has an improved _2x performance_.
 
@@ -94,7 +94,7 @@ In a [Go module](https://github.com/golang/go/wiki/Modules),
 import `enry` to the module by running:
 
 ```sh
-go get github.com/go-enry/go-enry/v2
+go get github.com/crowyy03/go-enry/v2
 ```
 
 The rest of the examples will assume you have either done this or fetched the
@@ -102,7 +102,7 @@ library into your `GOPATH`.
 
 ```go
 // The examples here and below assume you have imported the library.
-import "github.com/go-enry/go-enry/v2"
+import "github.com/crowyy03/go-enry/v2"
 
 lang, safe := enry.GetLanguageByExtension("foo.go")
 fmt.Println(lang, safe)
