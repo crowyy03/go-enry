@@ -102,7 +102,7 @@ library into your `GOPATH`.
 
 ```go
 // The examples here and below assume you have imported the library.
-import "github.com/go-enry/go-enry/v2"
+import "github.com/crowyy03/go-enry/v2"
 
 lang, safe := enry.GetLanguageByExtension("foo.go")
 fmt.Println(lang, safe)

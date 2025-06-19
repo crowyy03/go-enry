@@ -14,8 +14,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/go-enry/go-enry/v2"
-	"github.com/go-enry/go-enry/v2/data"
+	"github.com/crowyy03/go-enry/v2"
+	"github.com/crowyy03/go-enry/v2/data"
 )
 
 var (

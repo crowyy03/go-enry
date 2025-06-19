@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/go-enry/go-enry/v2/regex"
+	"github.com/crowyy03/go-enry/v2/regex"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

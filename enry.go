@@ -11,11 +11,11 @@ It is a port of the https://github.com/github/linguist from Ruby.
 Upstream Linguist YAML files are used to generate datastructures for data
 package.
 */
-package enry // import "github.com/go-enry/go-enry/v2"
+package enry // import "github.com/crowyy03/go-enry/v2"
 
 //go:generate make code-generate
 
-import "github.com/go-enry/go-enry/v2/data"
+import "github.com/crowyy03/go-enry/v2/data"
 
 // Type represent language's type. Either data, programming, markup, prose, or unknown.
 type Type int
