@@ -9,9 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/go-enry/go-enry/v2/data"
-	"github.com/go-enry/go-enry/v2/internal/tests"
-	"github.com/go-enry/go-enry/v2/internal/tokenizer"
+	"github.com/crowyy03/go-enry/v2/internal/tests"
+	"github.com/crowyy03/go-enry/v2/internal/tokenizer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -21,7 +20,7 @@ import (
 var (
 	linguistClonedEnvVar = "ENRY_TEST_REPO"
 	linguistURL          = "https://github.com/github/linguist.git"
-	commit               = "9b50e9e46bc0fb2451f5deee612a36c386aae6cf"
+	commit               = "add-mpl-grammar"
 	samplesDir           = "samples"
 	languagesFile        = filepath.Join("lib", "linguist", "languages.yml")
 
@@ -123,7 +122,7 @@ func Test_GeneratorTestSuite(t *testing.T) {
 
 func (s *GeneratorTestSuite) SetupSuite() {
 	var err error
-	s.tmpLinguistDir, s.isCleanupNeeded, err = tests.MaybeCloneLinguist(linguistClonedEnvVar, linguistURL, data.LinguistCommit)
+	s.tmpLinguistDir, s.isCleanupNeeded, err = tests.MaybeCloneLinguist(linguistClonedEnvVar, linguistURL, commit)
 	require.NoError(s.T(), err)
 
 	s.testCases = []testCase{
