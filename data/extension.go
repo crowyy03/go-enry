@@ -748,7 +748,7 @@ var LanguagesByExtension = map[string][]string{
 	".moo":                  {"Mercury", "Moocode"},
 	".moon":                 {"MoonScript"},
 	".move":                 {"Move"},
-	".mpl":                  {"JetBrains MPS", "MPL"},
+	".mpl":                  {"MPL", "JetBrains MPS"},
 	".mps":                  {"JetBrains MPS"},
 	".mq4":                  {"MQL4"},
 	".mq5":                  {"MQL5"},
