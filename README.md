@@ -1,4 +1,4 @@
-# go-enry [![GoDoc](https://godoc.org/github.com/go-enry/go-enry?status.svg)](https://pkg.go.dev/github.com/crowyy03/go-enry/v2) [![Test](https://github.com/go-enry/go-enry/actions/workflows/goTest.yml/badge.svg)](https://github.com/go-enry/go-enry/actions/workflows/goTest.yml?query=branch%3Amaster)
+# go-enry [![GoDoc](https://godoc.org/github.com/crowyy03/go-enry/v2?status.svg)](https://pkg.go.dev/github.com/crowyy03/go-enry/v2) [![Test](https://github.com/crowyy03/go-enry/v2/actions/workflows/goTest.yml/badge.svg)](https://github.com/crowyy03/go-enry/v2/actions/workflows/goTest.yml?query=branch%3Amaster)
 
 Programming language detector and toolbox to ignore binary or vendored files. _enry_, started as a port to _Go_ of the original [Linguist](https://github.com/github/linguist) _Ruby_ library, that has an improved _2x performance_.
 
@@ -138,7 +138,7 @@ langs := enry.GetLanguagesByFilename("Gemfile", []byte("<content>"), []string{})
 
 ### Java bindings
 
-Generated Java bindings using a C shared library and JNI are available under [`java`](https://github.com/go-enry/go-enry/blob/master/java).
+Generated Java bindings using a C shared library and JNI are available under [`java`](https://github.com/crowyy03/go-enry/v2/blob/master/java).
 
 A library is published on Maven as [tech.sourced:enry-java](https://mvnrepository.com/artifact/tech.sourced/enry-java) for macOS and linux platforms. Windows support is planned under [src-d/enry#150](https://github.com/src-d/enry/issues/150).
 
@@ -229,7 +229,7 @@ $ git clone https://github.com/github/linguist.git .linguist
 $ cd .linguist; git checkout <release-tag>; cd ..
 
 # put the new release's commit sha in the generator_test.go (to re-generate .gold test fixtures)
-# https://github.com/go-enry/go-enry/blob/13d3d66d37a87f23a013246a1b0678c9ee3d524b/internal/code-generator/generator/generator_test.go#L18
+# https://github.com/crowyy03/go-enry/v2/blob/13d3d66d37a87f23a013246a1b0678c9ee3d524b/internal/code-generator/generator/generator_test.go#L18
 
 $ make code-generate
 ```
@@ -244,7 +244,7 @@ To stay in sync, enry needs to be updated when a new release of the linguist inc
 There now is automation for detecting the changes in the upstream Linguist project: every day Github CI runs [a job](.github/workflows/sync-linguist.yml) that will create a PR to this repo for each new Linguist release. It will include all the steps from the above.
 
 When submitting a pull request syncing up to a new release manually, please make sure it only contains the changes in
-the generated files (in [data](https://github.com/go-enry/go-enry/blob/master/data) subdirectory).
+the generated files (in [data](https://github.com/crowyy03/go-enry/v2/blob/master/data) subdirectory).
 
 Separating all the necessary "manual" code changes to a different PR that includes some background description and an update to the documentation on ["divergences from linguist"](#divergences-from-linguist) is encouraged and very much appreciated, as it simplifies the maintenance (review/release notes/etc).
 
@@ -255,7 +255,7 @@ Separating all the necessary "manual" code changes to a different PR that includ
 
 ### Benchmark
 
-All benchmark scripts are in [_benchmarks_](https://github.com/go-enry/go-enry/blob/master/benchmarks) directory.
+All benchmark scripts are in [_benchmarks_](https://github.com/crowyy03/go-enry/v2/blob/master/benchmarks) directory.
 
 #### Dependencies
 
